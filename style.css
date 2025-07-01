@@ -1,0 +1,71 @@
+body {
+  font-family: Arial, sans-serif;
+  background: #f9f9f9;
+  margin: 0;
+  padding: 20px;
+  color: #333;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  min-height: 100vh;
+}
+
+h1 {
+  margin-bottom: 30px;
+  font-size: 2rem;
+}
+
+.container {
+  max-width: 600px;
+  width: 100%;
+}
+
+section {
+  margin-bottom: 30px;
+}
+
+section h2 {
+  font-size: 1.5rem;
+  margin-bottom: 15px;
+  border-bottom: 2px solid #aaa;
+  padding-bottom: 5px;
+}
+
+.botoes {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(140px, 1fr));
+  gap: 15px;
+}
+
+button {
+  padding: 18px 10px;
+  font-size: 1.1rem;
+  border: none;
+  border-radius: 10px;
+  background-color: #4caf50;
+  color: white;
+  cursor: pointer;
+  user-select: none;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+  transition: background-color 0.3s, transform 0.15s;
+}
+
+button:hover {
+  background-color: #45a049;
+  transform: scale(1.05);
+}
+
+button.ativo {
+  background-color: #d9534f !important;
+  box-shadow: 0 0 12px rgba(217, 83, 79, 0.7);
+  transform: scale(1.05);
+}
+
+/* Diferenciar botão "badcantor" com cor especial */
+button[onclick*="badcantor"] {
+  background-color: #45a049;
+  color: #222;
+  font-weight: bold;
+  box-shadow: 0 2px 8px rgba(255, 152, 0, 0.7);
+}
+
